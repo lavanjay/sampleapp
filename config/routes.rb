@@ -1,5 +1,10 @@
 Sampleapp::Application.routes.draw do
-  # The priority is based upon order of creation:
+  get "pages/home"
+
+  get "pages/contact"
+
+  get "pages/about"
+#The priority is based upon order of creation:
   # first created -> highest priority.
 
   # Sample of regular route:
@@ -38,7 +43,7 @@ Sampleapp::Application.routes.draw do
   #       get 'recent', :on => :collection
   #     end
   #   end
-
+#$ rails generate controller Pages home contact 
   # Sample resource route within a namespace:
   #   namespace :admin do
   #     # Directs /admin/products/* to Admin::ProductsController
